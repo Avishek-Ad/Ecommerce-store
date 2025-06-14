@@ -23,4 +23,8 @@ app.use("/api/coupons/", coupenRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("api/analytics", analyticsRoutes);
 
+app.use("/", (req, res) => {
+  res.send("Hello from backend");
+});
+
 export default app;
